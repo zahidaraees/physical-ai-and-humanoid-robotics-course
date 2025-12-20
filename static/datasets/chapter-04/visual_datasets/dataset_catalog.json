@@ -1,0 +1,52 @@
+{
+  "datasets": [
+    {
+      "name": "RGB-D Scenes for Humanoid Navigation",
+      "description": "Dataset of indoor scenes captured with RGB-D cameras for navigation and mapping in humanoid robotics",
+      "url": "https://example.com/rgbd-scenes-humanoid",
+      "size": "15.2 GB",
+      "modalities": ["RGB", "Depth"],
+      "tasks": ["SLAM", "Object Detection", "Scene Understanding"],
+      "license": "Creative Commons Attribution 4.0",
+      "sensor_specifications": {
+        "camera": "Intel RealSense D435",
+        "resolution": "1920x1080 RGB, 1280x720 Depth",
+        "frame_rate": "30 FPS"
+      },
+      "environment_types": ["Indoor Office", "Indoor Home", "Structured Environments"],
+      "robot_platform": "Generic Humanoid Platform"
+    },
+    {
+      "name": "Facial Expressions for Social HRI",
+      "description": "Dataset of human facial expressions with annotations for social interaction in humanoid robotics",
+      "url": "https://example.com/facial-expressions-hri",
+      "size": "3.4 GB",
+      "modalities": ["RGB"],
+      "tasks": ["Facial Expression Recognition", "Human Attention Detection", "Social Interaction"],
+      "license": "Creative Commons Attribution-NonCommercial 4.0",
+      "sensor_specifications": {
+        "camera": "StereoLabs ZED",
+        "resolution": "2208x1242",
+        "frame_rate": "30 FPS"
+      },
+      "environment_types": ["Indoor Social Settings"],
+      "robot_platform": "Social Humanoid Robot"
+    },
+    {
+      "name": "Object Manipulation in Humanoid Environments",
+      "description": "Dataset of objects commonly found in humanoid robot operating environments with 3D models and grasp annotations",
+      "url": "https://example.com/object-manipulation-humanoid",
+      "size": "8.7 GB",
+      "modalities": ["RGB", "3D Models"],
+      "tasks": ["Object Recognition", "Grasp Planning", "Manipulation"],
+      "license": "MIT License",
+      "sensor_specifications": {
+        "camera": "Multiple RGB-D sensors",
+        "resolution": "Varies by sensor",
+        "frame_rate": "30 FPS"
+      },
+      "environment_types": ["Indoor Home", "Indoor Office", "Laboratory"],
+      "robot_platform": "Manipulation-Capable Humanoid"
+    }
+  ]
+}

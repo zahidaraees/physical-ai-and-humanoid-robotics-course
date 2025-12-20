@@ -1,0 +1,52 @@
+{
+  "datasets": [
+    {
+      "name": "Speech in Noisy Environments for HRI",
+      "description": "Dataset of human speech recorded in environments typical for humanoid robot operation with varying noise levels",
+      "url": "https://example.com/speech-noisy-hri",
+      "size": "4.2 GB",
+      "modalities": ["Audio"],
+      "tasks": ["Speech Recognition", "Speaker Identification", "Noise Robustness"],
+      "license": "Creative Commons Attribution 4.0",
+      "sensor_specifications": {
+        "microphone": "Planar microphone array",
+        "sample_rate": "48 kHz",
+        "channels": "8-channel array"
+      },
+      "environment_types": ["Indoor Office", "Noisy Public Spaces", "Home Environments"],
+      "robot_platform": "Speech-Enabled Humanoid Robot"
+    },
+    {
+      "name": "Environmental Sounds for Robot Awareness",
+      "description": "Dataset of environmental sounds for situational awareness in humanoid robots",
+      "url": "https://example.com/env-sounds-awareness",
+      "size": "1.8 GB",
+      "modalities": ["Audio"],
+      "tasks": ["Sound Classification", "Activity Recognition", "Warning Detection"],
+      "license": "Creative Commons Attribution-NonCommercial 4.0",
+        "sensor_specifications": {
+        "microphone": "Omnidirectional condenser microphones",
+        "sample_rate": "44.1 kHz",
+        "channels": "Stereo"
+      },
+      "sound_categories": ["Indoor Sounds", "Warning Sounds", "Activity Sounds"],
+      "robot_platform": "Environmentally Aware Humanoid Robot"
+    },
+    {
+      "name": "Acoustic Localization for Human-Robot Interaction",
+      "description": "Dataset for evaluating sound source localization capabilities in humanoid robots",
+      "url": "https://example.com/acoustic-localization-hri",
+      "size": "1.1 GB",
+      "modalities": ["Audio"],
+      "tasks": ["Sound Source Localization", "Speaker Tracking", "Direction Estimation"],
+      "license": "MIT License",
+      "sensor_specifications": {
+        "microphone": "6-microphone spherical array",
+        "sample_rate": "16 kHz",
+        "channels": "6-channel array"
+      },
+      "scenarios": ["Single Speaker", "Multiple Speakers", "Moving Speakers"],
+      "robot_platform": "Acoustic Localization Enabled Humanoid"
+    }
+  ]
+}

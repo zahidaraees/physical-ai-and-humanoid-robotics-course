@@ -1,0 +1,6 @@
+# Requirements for Chapter 03 Control Systems and Motion Planning Simulations
+numpy>=1.21.0
+matplotlib>=3.5.0
+scipy>=1.7.0
+casadi>=3.6.0  # For optimization-based control
+jupyter>=1.0.0

@@ -1,0 +1,9 @@
+# Requirements for Chapter 06 Human-Robot Interaction - FastAPI Endpoints
+fastapi>=0.85.0
+uvicorn>=0.18.0
+pydantic>=1.10.0
+python-multipart>=0.0.6
+pytest>=7.1.0
+httpx>=0.23.0
+numpy>=1.21.0
+pydantic-settings>=2.0.0

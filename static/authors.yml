@@ -1,0 +1,15 @@
+# authors.yml
+zahida-raees:
+  name: Zahida Raees
+  title: Scholar, Programmer, Writer
+  url: https://pk.linkedin.com/in/zahida-raees-837602a
+  image_url: /img/authors/zahida-raees.jpg
+  bio: >
+    Zahida Raees (زاھدہ رئیس راجی) is a multidisciplinary scholar, educator, programmer, and writer.
+    Her work spans Balochi language and literature, humanoid robotics and AI education, and software development.
+    She has authored five books, contributed to Baask.com (the first digital library of Balochi literature),
+    and maintains GitHub repositories focused on TypeScript, Node.js, and AI projects.
+  socials:
+    github: https://github.com/zahidaraees
+    linkedin: https://pk.linkedin.com/in/zahida-raees-837602a
+    website: https://baask.com/archive/category/balochi_female_writers/zahida_raees_raji/

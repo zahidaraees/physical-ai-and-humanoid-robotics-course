@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect width="100" height="100" fill="#2563eb" rx="20"/>
+  <g transform="translate(20, 20)">
+    <!-- Head -->
+    <circle cx="30" cy="15" r="10" fill="#f8fafc"/>
+    
+    <!-- Body -->
+    <rect x="20" y="25" width="20" height="30" rx="5" fill="#f8fafc"/>
+    
+    <!-- Arms -->
+    <line x1="15" y1="30" x2="5" y2="40" stroke="#f8fafc" stroke-width="3" stroke-linecap="round"/>
+    <line x1="45" y1="30" x2="55" y2="40" stroke="#f8fafc" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Legs -->
+    <line x1="25" y1="55" x2="25" y2="65" stroke="#f8fafc" stroke-width="3" stroke-linecap="round"/>
+    <line x1="35" y1="55" x2="35" y2="65" stroke="#f8fafc" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Brain pattern in head -->
+    <path d="M25,12 Q30,8 35,12 Q30,16 25,12" fill="none" stroke="#2563eb" stroke-width="1"/>
+    <path d="M25,18 Q30,22 35,18" fill="none" stroke="#2563eb" stroke-width="1"/>
+  </g>
+  <text x="50" y="90" text-anchor="middle" font-family="Arial" font-size="12" fill="white" font-weight="bold">
+    PAI
+  </text>
+</svg>

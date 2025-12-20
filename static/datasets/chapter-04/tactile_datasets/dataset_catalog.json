@@ -1,0 +1,52 @@
+{
+  "datasets": [
+    {
+      "name": "Tactile Skin Interaction Dataset",
+      "description": "Dataset of tactile sensor readings during various interaction tasks for humanoid robots with tactile skin",
+      "url": "https://example.com/tactile-skin-interaction",
+      "size": "2.1 GB",
+      "modalities": ["Tactile Pressure", "Temperature"],
+      "tasks": ["Contact Detection", "Force Estimation", "Material Recognition"],
+      "license": "Creative Commons Attribution 4.0",
+      "sensor_specifications": {
+        "type": "BioTac Tactile Sensors",
+        "resolution": "19 taxels per sensor",
+        "update_rate": "100 Hz"
+      },
+      "interaction_types": ["Grasping", "Manipulation", "Human Contact"],
+      "robot_platform": "Tactile-Skin Equipped Humanoid"
+    },
+    {
+      "name": "Force/Torque Grasp Dataset",
+      "description": "Dataset of force and torque measurements during object grasping for humanoid robots",
+      "url": "https://example.com/force-torque-grasp",
+      "size": "800 MB",
+      "modalities": ["Force", "Torque"],
+      "tasks": ["Grasp Stability", "Slip Detection", "Compliance Control"],
+      "license": "MIT License",
+      "sensor_specifications": {
+        "type": "ATI F/T Sensors",
+        "resolution": "Sub-Newton accuracy",
+        "update_rate": "1000 Hz"
+      },
+      "object_types": ["Household Objects", "Tools", "Deformable Objects"],
+      "robot_platform": "Force-Controlled Humanoid Hand"
+    },
+    {
+      "name": "Texture Recognition with Tactile Sensors",
+      "description": "Dataset of tactile sensor readings from various textures for material recognition in humanoid robots",
+      "url": "https://example.com/tactile-texture-recognition",
+      "size": "1.3 GB",
+      "modalities": ["Pressure Distribution", "Vibration"],
+      "tasks": ["Texture Classification", "Material Recognition", "Surface Property Estimation"],
+      "license": "Creative Commons Attribution-NonCommercial 4.0",
+      "sensor_specifications": {
+        "type": "GelSight Tactile Sensors",
+        "resolution": "High-resolution contact imaging",
+        "update_rate": "60 FPS"
+      },
+      "texture_types": ["Fabric", "Wood", "Metal", "Plastic", "Paper"],
+      "robot_platform": "Dexterous Humanoid Manipulator"
+    }
+  ]
+}
