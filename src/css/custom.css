@@ -1,0 +1,337 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2563eb;
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
+  --ifm-code-font-size: 95%;
+  --ifm-hero-background-color: #1e293b;
+  --ifm-hero-text-color: rgb(176, 174, 182);
+}
+
+/* Custom styles for Physical AI and Humanoid Robotics Course */
+.hero--primary {
+  background-color: var(--ifm-hero-background-color);
+  color: var(--ifm-hero-text-color);
+}
+
+.navbar--primary {
+  background-color: #1e293b;
+}
+
+.navbar__title {
+  color: rgb(42, 15, 141) !important;
+  font-weight: bold;
+}
+
+.navbar__link {
+  color: #cbd5e1;
+}
+
+.navbar__link:hover {
+  color: rgb(236, 215, 215);
+}
+
+/* Dark theme navbar adjustments */
+html[data-theme='dark'] .navbar__title {
+  color: white !important;
+}
+
+html[data-theme='dark'] .navbar__link {
+  color: #cbd5e1;
+}
+
+html[data-theme='dark'] .navbar__link:hover {
+  color: rgb(213, 230, 216);
+}
+
+/* Light theme navbar adjustments */
+html[data-theme='light'] .navbar__title {
+  color: rgb(18, 4, 59) !important;
+}
+
+html[data-theme='light'] .navbar__link {
+  color: #8698ad !important;
+}
+
+html[data-theme='light'] .navbar__link:hover {
+  color: rgb(168, 89, 89) !important;
+}
+
+/* Ensure navbar buttons have appropriate colors in both modes */
+html[data-theme='dark'] .navbar__item a,
+html[data-theme='dark'] .navbar__toggle,
+html[data-theme='dark'] .clean-btn,
+html[data-theme='dark'] .theme-edit-this-page {
+  color: rgb(117, 13, 13) !important;
+  background-color: transparent !important;
+}
+
+html[data-theme='light'] .navbar__item a,
+html[data-theme='light'] .navbar__toggle,
+html[data-theme='light'] .clean-btn,
+html[data-theme='light'] .theme-edit-this-page {
+  color: rgb(247, 241, 241) !important;
+  background-color: #1e293b !important;
+  border: 1px solid #334155 !important;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+/* Navbar buttons hover states */
+html[data-theme='dark'] .navbar__item a:hover,
+html[data-theme='dark'] .navbar__toggle:hover {
+  color: #cbd5e1 !important;
+  background-color: rgba(255,255,255,0.1) !important;
+}
+
+html[data-theme='light'] .navbar__item a:hover,
+html[data-theme='light'] .navbar__toggle:hover {
+  color: #e2e8f0 !important;
+  background-color: #334155 !important;
+}
+
+/* Active/link states */
+html[data-theme='dark'] .navbar__item a.navbar__link--active,
+html[data-theme='light'] .navbar__item a.navbar__link--active {
+  text-decoration: underline !important;
+}
+
+.footer--dark {
+  background-color: #0f172a;
+}
+
+/* Fix text visibility in documentation content area in dark mode */
+html[data-theme='dark'] .markdown h1,
+html[data-theme='dark'] .markdown h2,
+html[data-theme='dark'] .markdown h3,
+html[data-theme='dark'] .markdown h4,
+html[data-theme='dark'] .markdown h5,
+html[data-theme='dark'] .markdown h6 {
+  color: #f1f5f9;
+}
+
+html[data-theme='dark'] .markdown p,
+html[data-theme='dark'] .markdown li,
+html[data-theme='dark'] .markdown span,
+html[data-theme='dark'] .markdown div,
+html[data-theme='dark'] .markdown a {
+  color: #cbd5e1;
+}
+
+html[data-theme='dark'] .theme-doc-markdown.markdown,
+html[data-theme='dark'] article,
+html[data-theme='dark'] .container {
+  color: #cbd5e1;
+}
+
+/* Ensure code blocks have good contrast in dark mode */
+html[data-theme='dark'] .prism-code {
+  background-color: #0f172a !important;
+  color: #e2e8f0;
+}
+
+html[data-theme='dark'] .token.comment {
+  color: #94a3b8;
+}
+
+html[data-theme='dark'] .token.punctuation {
+  color: #cbd5e1;
+}
+
+html[data-theme='dark'] .token.property,
+html[data-theme='dark'] .token.tag,
+html[data-theme='dark'] .token.constant,
+html[data-theme='dark'] .token.symbol,
+html[data-theme='dark'] .token.deleted {
+  color: #f87171;
+}
+
+html[data-theme='dark'] .token.boolean,
+html[data-theme='dark'] .token.number,
+html[data-theme='dark'] .token.selector,
+html[data-theme='dark'] .token.attr-name,
+html[data-theme='dark'] .token.string,
+html[data-theme='dark'] .token.char,
+html[data-theme='dark'] .token.builtin,
+html[data-theme='dark'] .token.inserted {
+  color: #34d399;
+}
+
+html[data-theme='dark'] .token.operator,
+html[data-theme='dark'] .token.entity,
+html[data-theme='dark'] .token.url,
+html[data-theme='dark'] .language-css .token.string,
+html[data-theme='dark'] .style,
+html[data-theme='dark'] .token.variable {
+  color: #60a5fa;
+}
+
+html[data-theme='dark'] .token.atrule,
+html[data-theme='dark'] .token.attr-value,
+html[data-theme='dark'] .token.function {
+  color: #fbbf24;
+}
+
+/* Dark mode adjustments for main content */
+html[data-theme='dark'] main,
+html[data-theme='dark'] .container.padding-top--md,
+html[data-theme='dark'] .theme-doc-markdown {
+  color: #cbd5e1 !important;
+  background-color: var(--ifm-background-color, #0f172a) !important;
+}
+
+/* Dark mode adjustments for content sections */
+html[data-theme='dark'] .section-alt,
+html[data-theme='dark'] .features,
+html[data-theme='dark'] .curriculum {
+  background-color: #1e293b;
+  color: #e2e8f0;
+}
+/* Specific fix for about section text visibility in dark mode */
+html[data-theme='dark'] .about h2,
+html[data-theme='dark'] .about p,
+html[data-theme='dark'] .about div,
+html[data-theme='dark'] .about span,
+html[data-theme='dark'] .about strong,
+html[data-theme='dark'] .about em {
+  color: #4f627a !important;
+}
+
+/* Specific fix for about section text visibility in light mode */
+html[data-theme='light'] .about h2,
+html[data-theme='light'] .about p,
+html[data-theme='light'] .about div,
+html[data-theme='light'] .about span,
+html[data-theme='light'] .about strong,
+html[data-theme='light'] .about em {
+  color: #f3f4f7 !important; /* dark slate text for contrast */
+}
+
+/* For any white background sections in dark mode, ensure dark text */
+html[data-theme='dark'] {
+  --ifm-color-content: #1e293b;
+   --ifm-color-content-inverse: #e2e8f0;
+}
+
+/* Specific selector for elements that might have white background in dark mode */
+html[data-theme='dark'] div[style*="background-color: white"],
+html[data-theme='dark'] .col.col--4,
+html[data-theme='dark'] .curriculumCard,
+html[data-theme='dark'] .courseImage {
+  color: #1e293b !important;
+  background-color: #f1f5f9 !important;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Additional custom styles for the course */
+.course-card {
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.course-card h3 {
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.75rem;
+}
+
+.section-alt {
+  background-color: #f8fafc;
+}
+
+/* Typography enhancements */
+.hero__title {
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.hero__subtitle {
+  font-size: 1.3rem;
+  color: white;
+}
+
+html[data-theme='dark'] .hero__subtitle {
+  color: white;
+}
+
+html[data-theme='dark'] .hero__title {
+  color: white;
+}
+
+/* Button styling */
+.button--secondary {
+  background-color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+}
+
+.button--secondary:hover {
+  background-color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
+}
+
+/* Ensure About section text is visible in both themes */
+
+/* Dark theme */
+html[data-theme='dark'] .about h2,
+html[data-theme='dark'] .about p,
+html[data-theme='dark'] .about div,
+html[data-theme='dark'] .about span,
+html[data-theme='dark'] .about strong,
+html[data-theme='dark'] .about em {
+  color: rgb(242, 243, 242) !important;
+}
+
+/* Light theme */
+html[data-theme='light'] .about h2,
+html[data-theme='light'] .about p,
+html[data-theme='light'] .about div,
+html[data-theme='light'] .about span,
+html[data-theme='light'] .about strong,
+html[data-theme='light'] .about em {
+  color: #1e293b !important; /* dark slate text */
+}
+
+/* Dark theme override for About section */
+html[data-theme='dark'] .container .about,
+html[data-theme='dark'] .container .about * {
+  color: #010d1d !important;
+}
+
+/* Light theme override for About section */
+html[data-theme='light'] .container .about,
+html[data-theme='light'] .container .about * {
+  color: #1e293b !important;
+}
+
+/* Always use dark text in About section, since background is white */
+.about,
+.about * {
+  color: #1e293b !important; /* dark slate text */
+}

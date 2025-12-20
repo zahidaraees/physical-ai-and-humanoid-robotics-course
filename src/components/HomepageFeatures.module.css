@@ -1,0 +1,20 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+  background-color: #f0f8ff;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
+
+.featureImage {
+  max-height: 200px;
+  max-width: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,97 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  padding: 6rem 0;
+  background-color: #f9f9f9; /* Light theme background */
+}
+
+/* Keep white background in dark theme as well */
+:global(html[data-theme='dark']) .about {
+  background-color: #ffffff; /* Keep white background in dark theme */
+}
+
+/* Light theme text color */
+:global(html[data-theme='light']) .about h2,
+:global(html[data-theme='light']) .about p {
+  color: #1e293b; /* dark slate text */
+}
+
+/* Dark theme text color - same as light theme for visibility against white background */
+:global(html[data-theme='dark']) .about h2,
+:global(html[data-theme='dark']) .about p {
+  color: #1e293b; /* dark slate text for visibility against white background */
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.curriculumCard {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.curriculumCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.curriculumCard h3 {
+  color: #25c2a0;
+  margin-bottom: 0.75rem;
+}
+
+.curriculum {
+  padding: 4rem 0;
+  background-color: white; /* Light theme background */
+}
+
+/* Dark theme background for curriculum section */
+:global(html[data-theme='dark']) .curriculum {
+  background-color: #1a1a1a; /* Darker background for dark theme */
+}
+
+.courseImage {
+  padding: 1rem;
+  background-color: white; /* Light theme background */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Dark theme background for course image section */
+:global(html[data-theme='dark']) .courseImage {
+  background-color: #2d2d2d; /* Darker background for dark theme */
+}
+.courseImage img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
